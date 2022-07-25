@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Functions</title>
+    <style>
+        .bluebox{
+            background-color: #3A5795;
+            color: white;
+            height: 100px;
+            width: auto;
+        }
+        .yellowbox{
+            background-color: yellow;
+            color: white;
+            height: 100px;
+            width: auto;
+        }
+        .greenbox{
+            background-color: green;
+            color: white;
+            height: 100px;
+            width: auto;
+        }
+        .great{
+            color: red;
+        }
+    </style>
+</head>
+    <body>
+      <div class="bluebox" id="Facebook">
+          <p>Facebook</p>
+        </div>
+        <div class="yellowbox" id="Microsoft">
+          <p>Microsoft</p>
+        </div>
+        <div class="greenbox" id="Apple">
+          <p>Apple</p>
+        </div>
+        <div>
+            <button id="button1">change facebook style</button>
+            <button id="button2">change apple style</button>
+        </div>
+        <script>
+//           function greeting1(){
+//               window.alert('Hello');
+//           }
+//            greeting1());
+            document.getElementById("button1").onclick=function Swap(id1,id2){
+                 var x=document.getElementById(id1).innerHTML;
+                 var y=document.getElementById(id2).innerHTML;
+                 document.getElementById(id2).innerHTML=x;
+                 document.getElementById(id1).innerHTML=y;
+            }
+//            function sum(a,b){
+//                return a+b;
+//            }
+//            var x=sum(3,4);
+//            window.alert(x);
+           
+        </script>
+                    
+
+        
+    </body>
+</html>
